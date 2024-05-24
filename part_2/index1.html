@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Part 2</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="reverseBtnText">{{ btnText }}</button>
+    </div>
+
+
+    <script>
+
+        new Vue({
+            el: '#app',
+            data: {
+                btnText: "Перевернуть"
+            },
+            methods: {
+                reverseBtnText() {
+                    let textArray = this.btnText.split("");
+                    let reverseArray = textArray.reverse();
+                    this.btnText = reverseArray.join("");
+                },
+            },
+        })
+    </script>
+</body>
+
+</html>

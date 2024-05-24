@@ -1,0 +1,389 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: inherit;
+  }
+  
+  .btrr {
+    border-top-right-radius: 100px;
+  }
+  
+  .btlr {
+    border-top-left-radius: 100px;
+  }
+  
+  .bbrr {
+    border-bottom-right-radius: 100px;
+  }
+  
+  .bblr {
+    border-bottom-left-radius: 100px;
+  }
+  
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__menubar {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: rgb(41, 47, 54);
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .banner {
+    margin-bottom: 95px;
+  }
+  .banner__content {
+    width: 1200px;
+    height: 758px;
+    background-image: url("images/banner-back.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: center;
+    border-radius: 50px;
+    padding: 200px 50px;
+  }
+  .banner__title {
+    font-family: "DM Serif Display", serif;
+    font-size: 65px;
+    font-weight: 400;
+    max-width: 484px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+    color: #292f36;
+  }
+  .banner__descr {
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #4d5053;
+    max-width: 434px;
+    margin-bottom: 20px;
+  }
+  .banner__button {
+    padding: 25px 50px;
+    border-radius: 15px;
+    background-color: #292f36;
+    display: inline-block;
+    max-width: 221px;
+    transition: all 0.4s;
+  }
+  .banner__button:hover {
+    background-color: #818181;
+  }
+  .banner__button:active {
+    background-color: #292f36;
+  }
+  .banner__button_text {
+    color: #ffffff;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    /* margin-top: 95px; */
+    margin-bottom: 95px;
+    gap: 95px;
+    max-width: 1200px;
+  }
+  .project__heading {
+    gap: 8px;
+  }
+  .project__heading_title {
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: center;
+    color: #292f36;
+  }
+  .project__heading_text {
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #292f36;
+    text-align: center;
+  }
+
+  .project__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .project__card_row {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    height: 630px;
+    gap: 100px;
+  }
+  .project__card_row-item {
+    display: flex;
+    flex-direction: column;
+    width: 619px;
+    height: 548px;
+    gap: 24px;
+  }
+  .project__card_img{
+    width: 525px;
+    height: 548px;
+  }
+  .project__item_descr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project__item_descr-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #292f36;
+  }
+  .project__item_descr-type {
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #292f36;
+  }
+  .project__item_descr-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #f4f0ec;
+    padding: 26px 30px;
+  }
+  
+  .counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f0ec;
+    height: 457px;
+    margin-bottom: 95px;
+  }
+  .counter__content {
+    display: flex;
+    justify-content: center;
+    height: 155px;
+  }
+  .counter__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-right: 1px solid rgb(205, 162, 116);
+  }
+  .counter__item:last-child {
+    border: none;
+  }
+  .counter__item_number {
+    font-family: "DM Serif Display", serif;
+    font-size: 85px;
+    font-weight: 400;
+    color: #cda274;
+  }
+  .counter__item_text {
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #4d5053;
+    text-align: center;
+  }
+  
+  .blog {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    margin-bottom: 134px;
+  }
+  .blog__heading_title {
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #292f36;
+  }
+  .blog__heading_text {
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .blog__articles {
+    display: flex;
+    flex-direction: row;
+    height: 521px;
+    gap: 27px;
+  }
+  .blog__articles-item {
+    border: 1px solid #E7E7E7;
+    border-radius: 62px;
+    max-width: 382px;
+    position: relative;
+  }
+  .blog__articles_item-sub_tag {
+    width: 124px;
+    height: 40px;
+    top: 250px;
+    left: 40px;
+    border-radius: 8px 8px 
+    8px 0;
+    background-color: #fff;
+    color: #4D5053;
+    border: none;
+    position: absolute;
+  }
+  .blog__articles_item-sub { 
+    display: flex;
+    flex-direction: column;
+    padding: 21px;
+    gap: 10px;
+    border-radius: 62px;
+  }
+  .blog__articles_item-sub_content {
+
+  }
+  .blog__articles_item-sub_content img {
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    max-width: 100%;
+  }
+  .blog__articles_item-sub_text {
+    height: 152px;
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #292f36;
+    width: 340px;
+    gap: 30px;
+  }
+  .blog__articles-item_title {
+    max-width: 305px;
+    color: #292f36;
+  }
+  .blog__articles-item_bot {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .blog__articles-item_bot p {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4d5053;
+  }
+  .blog__articles-item_bot a {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #f4f0ec;
+    padding: 8px;
+    text-align: center;
+  }
+  .blog__articles-item:nth-child(2) {
+    background-color: #f4f0ec;
+  }
+  .blog__articles-item:nth-child(2) a {
+    background-color: #fff;
+  }
+  
+  .footer {
+    height: 406px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer__left p {
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #4d5053;
+  }
+  .footer__left_social {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  .footer__center {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 100px;
+  }
+  .footer__center h5 {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #292f36;
+  }
+  .footer__center a {
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #4d5053;
+  }
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 100px;
+  }
+  .footer__right h5 {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #292f36;
+  }
+  .footer__right a, .footer__right p {
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #4d5053;
+  }/*# sourceMappingURL=style.css.map */
